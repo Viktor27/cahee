@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import "normalize";
+@import "layout";
+$primary:#262626;
+$primary-font:'Raleway' ,sans-serif;
+
+body{
+	font: 300 17px/1.5 $primary-font , Arial, sans-serif;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 15px;
+	padding-right: 15px;
+	max-width: 1200px;
+}
+
+
+
+/* Typography */
+h1,h2,h3,h4,h5,h6 {
+	font-size: 90px;
+	font-weight: 700;
+	margin: 0;
+}
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	text-decoration: none;
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+.ba-header {
+	position: relative;
+	background: #fff url(../img/headerbg.jpg) 50% no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	padding: 50px 0 120px;
+
+	&__logo h1 {
+		font-family: Pacifico;
+		color:  #262626;
+		font-size: 50px;
+		font-weight: 400;
+		text-align: right;
+
+
+	}
+	&__menu li{
+		font-family: $primary-font;
+		font-weight: bold;
+		text-transform: uppercase;
+		list-style: none;
+		float: left;
+		padding-left: 35px;
+		padding-top: 8px;
+
+	}
+	&__menu a {
+		color:$primary;
+	}
+	&__menu a:hover {
+		border-top: 3px solid #ff6033;
+		opacity: .9;
+	}
+	&__info {
+		width: 35%;
+		padding: 258px 0;
+
+		h2 {
+			color:  #262626;
+			font-size: 60px;
+			font-weight: 900;
+			line-height: .4;
+			margin-bottom: 40px;
+		}
+		p {
+			line-height: 1.5;
+			margin-bottom: 30px;
+		}
+		a {
+			display: inline-block;
+			width: 50%;
+			background-color:  #ff6033;
+			box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+			padding: 15px 20px;
+			text-align: center;
+			color: #ffffff;
+			font-size: 20px;
+			transition: .7s;
+
+
+		}
+		a:hover {
+			color: #000;
+			background: #D9B2CD;
+		}
+		a:active {
+			transform: scale(.8);
+
+
+		}
+
+	}
+	&__scroll {
+		position: absolute;
+		left: 50%;
+		bottom: 90px;
+		transition: transform .5s;
+
+	}
+	&__scroll:hover {
+		transform: rotate(180deg);
+	}
+}
+
+// about
+
+.ba-about {
+	background: url(../img/bgabout.jpg);
+
+	& img {
+		padding-right: 80px;
+		max-width: none;
+		height: auto;
+		transition: 2s ease-in;
+	}
+	& img:hover {
+		transform: rotate(360deg)
+	}
+
+.ba-content {
+	padding: 135px 0 100px 100px;
+}
+	&__title {
+		color:  #ffffff;
+		font-size: 90px;
+		font-weight: 700;
+margin: -10px;
+
+	}
+	& p {
+		color: #ffffff;
+		margin-bottom: 15px;
+		line-height: 1.5;
+	}
+
+
+}
